@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+{% block content %}
+<section>
+    {% for serie in serie %}
+        <div class="container">
+            <div class="illustr">
+                <h2>{{ serie.titre }}</h2>
+                <h3>{{ serie.id }}</h3>
+                <img src="{{ asset(serie.image) }}" alt="">
+            </div>
+            <div class="text">
+                <p>
+                    {{ serie.description }}
+                </p>
+            </div>
+        </div>
+    {% endfor %}
+</section>
+{% endblock %}

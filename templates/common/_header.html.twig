@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <title>Mon 1er projet Symfony</title>
+</head>
+<body>
+<header>
+    <div>
+        <a href="{{ path("accueil") }}"><img class="logo" src="{{ 'assets/img/photo.gif' }}" alt="banane qui danse"></a>
+    </div>
+    <div class="titre">
+        <h1>
+            {{ title }}
+        </h1>
+    </div>
+</header>
+<nav class="menu">
+    <div><a href="{{ path("contact") }}"> Page 1</a></div>
+    <div><a href="{{ path("profil") }}">Page 2</a></div>
+</nav>
